@@ -1,12 +1,14 @@
 <!-- transaction-form.component.html -->
-<form [formGroup]="transactionForm" (ngSubmit)="onSubmit()">
-    <div>
-        <label>Description:</label>
-        <input type="text" formControlName="description" />
-    </div>
-    <div>
-        <label>Amount:</label>
-        <input type="number" formControlName="amount">
-    </div>
-    <button type="submit">Add Transaction</button>
-</form>
+<div class="card card-body">
+    <form [formGroup]="transactionForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label class="form-label" >Description:</label>
+            <input class="form-control" type="text" formControlName="description" />
+        </div>
+        <div class="mb-3">
+            <label class="form-label" >Amount:</label>
+            <input class="form-control" type="number" formControlName="amount">
+        </div>
+        <button class="btn btn-primary btn-sm" type="submit">Add Transaction</button>
+    </form>
+</div>
